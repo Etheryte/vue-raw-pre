@@ -71,8 +71,3 @@ Internally, `vue-raw-pre` works as a [Webpack loader](https://webpack.js.org/loa
 This means that no component registration in required, the tag doesn't exist in your final bundle.
 
 Currently only HTML templates in [SFCs](https://vuejs.org/v2/guide/single-file-components.html) are supported.
-
-### Breaking mustaches
-
-Vue uses [mustache syntax](https://vuejs.org/v2/guide/syntax.html) for templating: `{{ 1 + 2 }}` in your source becomes `3` in the output.  
-To escape these, `vue-raw-pre` injects empty template tags to break them up.
