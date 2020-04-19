@@ -4,7 +4,7 @@ A what-you-see-is-what-you-get preformatted code tag for Vue.
 `vue-raw-pre` exposes a single slot that outputs whatever you put into it verbatim.
 
 <!-- prettier-ignore-start -->
-| Vue template | Result in browser |
+| Vue template | Renders in browser |
 | :--- | :--- |
 | <pre><code>&lt;pre&gt;</code><br><code>&nbsp;&nbsp;&lt;code&gt;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&gt;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;octocat /&gt;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;</code><br><code>&nbsp;&nbsp;&lt;/code&gt;</code><br><code>&lt;/pre&gt;</code></pre> | <pre><code><button>![Octocat mark image](https://github.com/Etheryte/vue-raw-pre/raw/master/mark.png)</button></code></pre> |
 | <pre><code>&lt;v-raw-pre&gt;</code><br><code>&nbsp;&nbsp;&lt;button&gt;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;octocat /&gt;</code><br><code>&nbsp;&nbsp;&lt;/button&gt;</code><br><code>&lt;/v-raw-pre&gt;</code></pre> | <pre><code>&lt;button&gt;</code><br><code>&nbsp;&nbsp;&lt;octocat /&gt;</code><br><code>&lt;/button&gt;</code></pre> |
