@@ -21,12 +21,19 @@ module.exports = function getCleanupRewriter(targetTagName) {
       return;
     }
 
-    shouldTrim = !(
-      node.attrs && node.attrs.some((attr) => attr.name === "no-trim")
-    );
     shouldDedent = !(
       node.attrs && node.attrs.some((attr) => attr.name === "no-dedent")
     );
+    shouldTrim = !(
+      node.attrs && node.attrs.some((attr) => attr.name === "no-trim")
+    );
+    // Disable mustache compilation
+    if (!node.attrs.some((attr) => attr.name === "v-pre")) {
+      node.attrs.push({
+        name: "v-pre",
+        value: "",
+      });
+    }
 
     // Switch the tag over to <pre><code>
     node.tagName = "pre";
@@ -47,12 +54,12 @@ module.exports = function getCleanupRewriter(targetTagName) {
     }
 
     let content = raw;
-    if (shouldTrim) {
-      content = trimLeadingAndTrailing(content);
-    }
     // TODO: Do we need to do these before escaping?
     if (shouldDedent) {
       content = stripIndent(content);
+    }
+    if (shouldTrim) {
+      content = trimLeadingAndTrailing(content);
     }
 
     rewriter.emitRaw(content);
@@ -65,8 +72,8 @@ module.exports = function getCleanupRewriter(targetTagName) {
     }
 
     // Reset to initial values
-    shouldTrim = false;
     shouldDedent = false;
+    shouldTrim = false;
 
     // Close off with a </code></pre>
     node.tagName = "pre";

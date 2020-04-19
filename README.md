@@ -6,10 +6,10 @@ A what-you-see-is-what-you-get preformatted code tag for Vue.
 <!-- prettier-ignore-start -->
 | Vue template | Result in browser |
 | :--- | :--- |
-| <pre><code>&lt;pre&gt;</code><br><code>&nbsp;&nbsp;&lt;code&gt;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;octocat-button /&gt;</code><br><code>&nbsp;&nbsp;&lt;/code&gt;</code><br><code>&lt;/pre&gt;</code></pre> | <pre><code>![Octocat mark image](https://github.com/Etheryte/vue-raw-pre/raw/master/mark.png)</code></pre> |
-| <pre><code>&lt;v-raw-pre&gt;</code><br><code>&nbsp;&nbsp;&lt;octocat-button /&gt;</code><br><code>&lt;/v-raw-pre&gt;</code></pre> | <pre><code>&lt;octocat-button /&gt;</code></pre> |
-| <pre><code>&lt;pre&gt;</code><br><code>&nbsp;&nbsp;&lt;code&gt;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;{{ 1 + 2 }}</code><br><code>&nbsp;&nbsp;&lt;/code&gt;</code><br><code>&lt;/pre&gt;</code></pre> | <pre><code>3</code></pre> |
-| <pre><code>&lt;v-raw-pre&gt;</code><br><code>&nbsp;&nbsp;{{ 1 + 2 }}</code><br><code>&lt;/v-raw-pre&gt;</code></pre> | <pre><code>{{ 1 + 2 }}</code></pre> |
+| <pre><code>&lt;pre&gt;</code><br><code>&nbsp;&nbsp;&lt;code&gt;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&gt;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;octocat /&gt;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;</code><br><code>&nbsp;&nbsp;&lt;/code&gt;</code><br><code>&lt;/pre&gt;</code></pre> | <pre><code><button>![Octocat mark image](https://github.com/Etheryte/vue-raw-pre/raw/master/mark.png)</button></code></pre> |
+| <pre><code>&lt;v-raw-pre&gt;</code><br><code>&nbsp;&nbsp;&lt;button&gt;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;octocat /&gt;</code><br><code>&nbsp;&nbsp;&lt;/button&gt;</code><br><code>&lt;/v-raw-pre&gt;</code></pre> | <pre><code>&lt;button&gt;</code><br><code>&nbsp;&nbsp;&lt;octocat /&gt;</code><br><code>&lt;/button&gt;</code></pre> |
+| <pre><code>&lt;pre&gt;</code><br><code>&nbsp;&nbsp;&lt;code&gt;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;{{ 1 + 2 }}&lt;span&gt;</code><br><code>&nbsp;&nbsp;&lt;/code&gt;</code><br><code>&lt;/pre&gt;</code></pre> | <pre><code><span>3</span></code></pre> |
+| <pre><code>&lt;v-raw-pre&gt;</code><br><code>&nbsp;&nbsp;&lt;span&gt;{{ 1 + 2 }}&lt;span&gt;</code><br><code>&lt;/v-raw-pre&gt;</code></pre> | <pre><code>&lt;span&gt;{{ 1 + 2 }}&lt;span&gt;</code></pre> |
 <!-- prettier-ignore-end -->
 
 `vue-raw-pre` is great for writing technical documentation and code samples for your projects.
