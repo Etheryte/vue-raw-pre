@@ -5,7 +5,7 @@ A what-you-see-is-what-you-get preformatted code tag for Vue.
 
 <!-- prettier-ignore-start -->
 | Code | Result in browser |
-| --- | --- |
+| :--- | :---: |
 | <pre><code>&lt;pre&gt;</code><br><code>&nbsp;&nbsp;&lt;code&gt;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;octocat-button /&gt;</code><br><code>&nbsp;&nbsp;&lt;/code&gt;</code><br><code>&lt;/pre&gt;</code></pre> | ![Sample image](https://github.com/Etheryte/vue-raw-pre/raw/master/mark.png) |
 | <pre><code>&lt;v-raw-pre&gt;</code><br><code>&nbsp;&nbsp;&lt;octocat-button /&gt;</code><br><code>&lt;/v-raw-pre&gt;</code></pre> | &lt;octocat-button /&gt; |
 <!-- prettier-ignore-end -->
