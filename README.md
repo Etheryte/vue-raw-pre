@@ -12,7 +12,8 @@ A what-you-see-is-what-you-get preformatted code tag for Vue.
 | <pre><code>&lt;v-raw-pre&gt;</code><br><code>&nbsp;&nbsp;&lt;octocat-button /&gt;</code><br><code>&lt;/v-raw-pre&gt;</code></pre> | <pre><code>&lt;octocat-button /&gt;</code></pre> |
 <!-- prettier-ignore-end -->
 
-`vue-raw-pre` is great for writing technical documentation and code samples for your projects.
+`vue-raw-pre` is great for writing technical documentation and code samples for your projects.  
+Readers will be able to copy-paste working code directly from your docs.
 
 ## Installation
 
@@ -25,11 +26,11 @@ yarn add vue-raw-pre --dev
 In `vue.config.js`:
 
 ```js
-const addRawPreLoader = require("vue-raw-pre");
+const addVueRawPreLoader = require("vue-raw-pre");
 
 module.exports = {
   chainWebpack: (config) => {
-    addRawPreLoader(config);
+    addVueRawPreLoader(config);
   },
 };
 ```
