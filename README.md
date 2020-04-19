@@ -3,11 +3,12 @@
 A what-you-see-is-what-you-get preformatted code tag for Vue.  
 `vue-raw-pre` exposes a single slot that outputs whatever you put into it verbatim.
 
-<!-- prettier-ignore -->
-| Code | Result |
+<!-- prettier-ignore-start -->
+| Code | Result in browser |
 | --- | --- |
-| <pre><code>&lt;pre&gt;</code><br><code>&nbsp;&nbsp;&lt;code&gt;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;octocat-button /&gt;</code><br><code>&nbsp;&nbsp;&lt;/code&gt;</code><br><code>&lt;/pre&gt;</code></pre> | // Image of Octocat |
+| <pre><code>&lt;pre&gt;</code><br><code>&nbsp;&nbsp;&lt;code&gt;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;octocat-button /&gt;</code><br><code>&nbsp;&nbsp;&lt;/code&gt;</code><br><code>&lt;/pre&gt;</code></pre> | ![Sample image](https://raw.githubusercontent.com/Etheryte/vue-raw-pre/master/mark.png) |
 | <pre><code>&lt;v-raw-pre&gt;</code><br><code>&nbsp;&nbsp;&lt;octocat-button /&gt;</code><br><code>&lt;/v-raw-pre&gt;</code></pre> | // Image of code output |
+<!-- prettier-ignore-end -->
 
 `vue-raw-pre` is great for writing technical documentation and code samples for your projects.
 
