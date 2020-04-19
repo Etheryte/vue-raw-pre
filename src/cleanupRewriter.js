@@ -50,6 +50,7 @@ module.exports = function getCleanupRewriter(targetTagName) {
     if (shouldTrim) {
       content = trimLeadingAndTrailing(content);
     }
+    // TODO: Do we need to do these before escaping?
     if (shouldDedent) {
       content = stripIndent(content);
     }
